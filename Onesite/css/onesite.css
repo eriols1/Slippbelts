@@ -41,7 +41,7 @@ footer {
 .container .artikel {
   display:flex;
   flex-wrap: wrap;
-  width:31.33%;
+  width:25%;
   margin: 2%;
 }
 #wrapper {
