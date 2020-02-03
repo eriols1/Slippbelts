@@ -18,7 +18,6 @@ nav a {
   color: #8E88A4;
 }
 main {
-  height: 350px;
   grid-area: main;
   display: flex;
   flex-wrap: wrap;
@@ -34,6 +33,16 @@ footer {
   grid-area: footer;
   background-color: #000000;
   height: 200px;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.container .artikel {
+  display:flex;
+  flex-wrap: wrap;
+  width:31.33%;
+  margin: 2%;
 }
 #wrapper {
   display: grid;
