@@ -44,7 +44,13 @@ footer {
   flex-wrap: wrap;
   width:15%;
   margin: 5%;
-
+}
+#nav  {
+  background-color: #262733;
+  height: 250px;
+  width: 70%;
+  position: absolute;
+  display: none;
 }
 #wrapper {
   display: grid;
