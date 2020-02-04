@@ -35,14 +35,16 @@ footer {
   height: 200px;
 }
 .container {
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
 }
 .container .artikel {
   display:flex;
   flex-wrap: wrap;
-  width:25%;
-  margin: 2%;
+  width:15%;
+  margin: 5%;
+
 }
 #wrapper {
   display: grid;
