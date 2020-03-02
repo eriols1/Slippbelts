@@ -42,6 +42,14 @@ footer {
   width:15%;
   margin: 5%;
 }
+#slider500px {
+grid-area: slider;
+display:flex;
+flex-wrap: wrap;
+display: flex;
+flex-wrap: wrap;
+background-color: lightgrey;
+}
  #box {
   grid-area: box;
   display:flex;
@@ -85,13 +93,49 @@ footer {
   height: 100%;
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;
-  grid-template-rows: 10% 2.5% 25% 25% 25% 12.5%;
+  grid-template-rows: 10% 2.5% 10% 25% 25% 12.5%;
   grid-template-areas:
   "header header header header"
   "nav nav nav nav"
+  "main main main main"
   "box box box box"
   "box2 box2 box2 box2"
   "box3 box3 box3 box3"
   "box4 box4 box4 box4"
   ;}
 /* #C08C8C #542304*/
+#window{
+  height: 200px;
+  width: 205px;
+}
+#imgs{
+  height: 200px;
+  width: 812px;
+  position: relative;
+}
+#bilddub{
+  display: none;
+}
+.button1{
+  margin-left: 7px;
+  display: none;
+}
+.button2{
+  display: none;
+}
+.punkt1{
+  margin-left: 7px;
+  display: none;
+}
+.punkt2{
+  margin-left: 7px;
+  display: none;
+}
+.punkt3{
+  margin-left: 7px;
+  display: none;
+}
+.scroll{
+  margin-left: 70px;
+  display: none;
+}
