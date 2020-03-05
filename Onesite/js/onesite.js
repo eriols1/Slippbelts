@@ -5,12 +5,11 @@ $(document).ready(function() {
       // Animation complete.
     });
   });
-});
 $("#belts").click(function(){
   $('html, body').animate({
     scrollTop: $("#box").offset().top
   }, 1000);
-});
+});// När man klickar går den ner till id #box
 $("#info").click(function(){
   $('html, body').animate({
     scrollTop: $("#box1").offset().top
@@ -31,42 +30,39 @@ $("#info").click(function(){
     scrollTop: $("#box4").offset().top
   }, 1000);
 });
+});
 /*jslint browser: true*/ /*global  $*/
-$(".button1").show();
+$(".slider500px").show();
 $("#bilddub").show();
-$(".button2").show();
-$(".punkt1").show();
-$(".punkt2").show();
-$(".punkt3").show();
-$(".scroll").show();
+$("#imgs").show();
 $("#window").css("overflow", "hidden");
 var x = -1;
 var i;
 
-$(".button1").click(function(){
-  x=x+201;
+$(".next").click(function(){
+  x=x+453;
 
-  if (x>600) {
+  if (x>1350) {
     x = 0;
   }
 
   $("#imgs").animate({left:-x},750);
 });
 
-$(".button2").click(function(){
-  x=x-201;
+$(".prev").click(function(){
+  x=x-453;
 
   if (x<0) {
-    x=402;
+    x=906;
   }
 
   $("#imgs").animate({left:-x},750);
 });
 
 $("#imgs").click(function(){
-  x=x+201;
+  x=x+453;
 
-  if (x>600) {
+  if (x>1350) {
     x = 0;
   }
 
@@ -83,10 +79,10 @@ $(".punkt1").click(function(){
 
 $(".punkt2").click(function(){
   if (x<1) {
-    x=x+201;
+    x=x+453;
 
-  }else if (x>300) {
-    x=x-201;
+  } else if (x>750) {
+    x=x-453;
   }
 
   $("#imgs").animate({left:-x},750);
@@ -94,23 +90,23 @@ $(".punkt2").click(function(){
 
 $(".punkt3").click(function(){
   if (x<1) {
-    x=x+402;
+    x=x+906;
 
-  }else if (x>200) {
-    x=x+201;
+  } else if (x>450) {
+    x=x+453;
   }
 
   $("#imgs").animate({left:-x},750);
 });
 
-$(".scroll").click(function(){
-  for(i=0;i<306;i+=1){
-    x=x+2;
-
-    if (x>610){
-      x=0;
-    }
-
-    $("#imgs").animate({left:-x},10);
-  }
-});
+// $(".scroll").click(function(){
+//   for(i=0;i<686;i+=1){
+//     x=x+2;
+//
+//     if (x>1370){
+//       x=0;
+//     }
+//
+//     $("#imgs").animate({left:-x},3);
+//   }
+// });
