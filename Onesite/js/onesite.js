@@ -5,44 +5,67 @@ $(document).ready(function() {
       // Animation complete.
     });
   });
-$("#belts").click(function(){
-  $('html, body').animate({
-    scrollTop: $("#box").offset().top
-  }, 1000);
-});// När man klickar går den ner till id #box
-$("#info").click(function(){
-  $('html, body').animate({
-    scrollTop: $("#box1").offset().top
-  }, 1000);
-});
-$("#slippers").click(function(){
-  $('html, body').animate({
-    scrollTop: $("#box2").offset().top
-  }, 1000);
-});
-$("#rea").click(function(){
-  $('html, body').animate({
-    scrollTop: $("#box3").offset().top
-  }, 1000);
-});
-$("#info").click(function(){
-  $('html, body').animate({
-    scrollTop: $("#box4").offset().top
-  }, 1000);
-});
+  $("#belts").click(function(){
+    $('html, body').animate({
+      scrollTop: $("#box").offset().top
+    }, 1000);
+  });// När man klickar går den ner till id #box
+  $("#info").click(function(){
+    $('html, body').animate({
+      scrollTop: $("#box1").offset().top
+    }, 1000);
+  });
+  $("#slippers").click(function(){
+    $('html, body').animate({
+      scrollTop: $("#box2").offset().top
+    }, 1000);
+  });
+  $("#rea").click(function(){
+    $('html, body').animate({
+      scrollTop: $("#box3").offset().top
+    }, 1000);
+  });
+  $("#info").click(function(){
+    $('html, body').animate({
+      scrollTop: $("#box4").offset().top
+    }, 1000);
+  });
 });
 /*jslint browser: true*/ /*global  $*/
-$(".slider500px").show();
-$("#bilddub").show();
-$("#imgs").show();
-$("#window").css("overflow", "hidden");
+window.addEventListener('resize', function(event){
+  // do stuff here
+
+  if ($(window).width()>1000){
+
+    $(".slider500px").show();
+    $("#bilddub").show();
+    $("#imgs").show();
+    $("#window").css("overflow", "hidden");
+
+  }
+  if ($(window).width()<1000){
+
+  $(".slider500px").hide();
+
+  }
+});
+
+if ($(window).width()>1000){
+
+  $(".slider500px").show();
+  $("#bilddub").show();
+  $("#imgs").show();
+  $("#window").css("overflow", "hidden");
+
+}
+
 var x = -1;
 var i;
 
 $(".next").click(function(){
-  x=x+453;
+  x=x+807;
 
-  if (x>1350) {
+  if (x>2400) {
     x = 0;
   }
 
@@ -50,19 +73,19 @@ $(".next").click(function(){
 });
 
 $(".prev").click(function(){
-  x=x-453;
+  x=x-807;
 
   if (x<0) {
-    x=906;
+    x=1606;
   }
 
   $("#imgs").animate({left:-x},750);
 });
 
 $("#imgs").click(function(){
-  x=x+453;
+  x=x+807;
 
-  if (x>1350) {
+  if (x>2400) {
     x = 0;
   }
 
@@ -79,10 +102,10 @@ $(".punkt1").click(function(){
 
 $(".punkt2").click(function(){
   if (x<1) {
-    x=x+453;
+    x=x+807;
 
-  } else if (x>750) {
-    x=x-453;
+  } else if (x>1200) {
+    x=x-807;
   }
 
   $("#imgs").animate({left:-x},750);
@@ -90,10 +113,10 @@ $(".punkt2").click(function(){
 
 $(".punkt3").click(function(){
   if (x<1) {
-    x=x+906;
+    x=x+1606;
 
-  } else if (x>450) {
-    x=x+453;
+  } else if (x>800) {
+    x=x+807;
   }
 
   $("#imgs").animate({left:-x},750);
