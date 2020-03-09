@@ -1,10 +1,11 @@
 body {
-  height:400vh;
+  height:500vh;
 }
 header {
   grid-area: header;
   background-color: #000000;
   background-image: url('../imgs/Biglogga.png');
+  position: center
 }
 nav {
   grid-area: nav;
@@ -39,7 +40,9 @@ footer {
   display: flex;
   flex-wrap: wrap;
   width:15%;
-  margin: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 5%;
 }
 .prev {
   cursor: pointer;
@@ -110,29 +113,19 @@ footer {
   grid-area: box;
   flex-wrap: wrap;
   display: flex;
-  flex-wrap: wrap;
   background-color: lightgrey;
 }
 #box2 {
   grid-area: box2;
   flex-wrap: wrap;
   display: flex;
-  flex-wrap: wrap;
-  background-color: blue;
+  background-color: lightgrey;
 }
 #box3 {
   grid-area: box3;
-  display:flex;
   flex-wrap: wrap;
   display: flex;
-  background-color: green;
-}
-#box4 {
-  grid-area: box4;
-  display:flex;
-  flex-wrap: wrap;
-  flex-wrap: wrap;
-  background-color: brown;
+  background-color: #000000;
 }
 #nav {
   background-color: #262733;
@@ -143,23 +136,31 @@ footer {
 }
 #window{
   margin: auto;
-  height: 400px;
-  width: 455px;
+  height: 800px;
+  width: 800px;
 }
 #imgs{
-  height: 450px;
-  width: 2012px;
+  height: 800px;
+  width: 3200px;
   position: relative;
   display: none;
 }
 #bilddub{
   display: none;
 }
+#Cart {
+margin-left: 20%;
+margin-right: 20%;
+position: relative;
+}
+#maps {
+  margin: 2%;
+}
 #wrapper {
   height: 100%;
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;
-  grid-template-rows: 10% 2.5% 20% 25% 25% 12.5%;
+  grid-template-rows: 8.5% 2% 32% 20% 24.5% 13%;
   grid-template-areas:
   "header header header header"
   "nav nav nav nav"
@@ -168,4 +169,24 @@ footer {
   "box2 box2 box2 box2"
   "box3 box3 box3 box3"
   ;}
-  /* #C08C8C #542304*/
+  @media screen and (max-width: 1100px) {
+    #wrapper {
+      height: 100%;
+      display: grid;
+      grid-template-columns: 25% 25% 25% 25%;
+      grid-template-rows: 8.5% 2% 33% 43% 13.5%;
+      grid-template-areas:
+      "header header header header"
+      "nav nav nav nav"
+      "box box box box"
+      "box2 box2 box2 box2"
+      "box3 box3 box3 box3"
+      ;}
+      .container .artikel{
+        width: 40%;
+      }
+      .slider{
+        display:none;
+      }
+    }
+    /* #C08C8C #542304*/
