@@ -4,8 +4,8 @@ body {
 header {
   grid-area: header;
   background-color: #000000;
+  background-position: center;
   background-image: url('../imgs/Biglogga.png');
-  position: center
 }
 nav {
   grid-area: nav;
@@ -42,7 +42,6 @@ footer {
   width:15%;
   margin-left: 5%;
   margin-right: 5%;
-  margin-top: 5%;
 }
 .prev {
   cursor: pointer;
@@ -127,6 +126,12 @@ footer {
   display: flex;
   background-color: #000000;
 }
+#box4 {
+  grid-area: box4;
+  flex-wrap: wrap;
+  display: flex;
+  background-color: lightgrey;
+}
 #nav {
   background-color: #262733;
   height: 200px;
@@ -136,7 +141,7 @@ footer {
 }
 #window{
   margin: auto;
-  height: 800px;
+  height: 600px;
   width: 800px;
 }
 #imgs{
@@ -149,32 +154,40 @@ footer {
   display: none;
 }
 #Cart {
-margin-left: 20%;
-margin-right: 20%;
-position: relative;
+  margin-left: 20%;
+  margin-right: 25%;
+  position: relative;
 }
 #maps {
-  margin: 2%;
+  margin-left: 3%;
+  margin-right: 3%;
+  margin-top: 1.5%;
 }
 #wrapper {
   height: 100%;
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;
-  grid-template-rows: 8.5% 2% 32% 20% 24.5% 13%;
+  grid-template-rows: 8% 2% 23% 17% 18% 18.5% 13.5%;
   grid-template-areas:
   "header header header header"
   "nav nav nav nav"
   "slider slider slider slider"
   "box box box box"
   "box2 box2 box2 box2"
+  "box4 box4 box4 box4"
   "box3 box3 box3 box3"
   ;}
-  @media screen and (max-width: 1100px) {
+  @media screen and (max-width: 1200px) {
+    header {
+    background-image: url('../imgs/BigloggaMindre.png');
+  }
+  }
+  @media screen and (max-width: 1150px) {
     #wrapper {
       height: 100%;
       display: grid;
       grid-template-columns: 25% 25% 25% 25%;
-      grid-template-rows: 8.5% 2% 33% 43% 13.5%;
+      grid-template-rows: 8% 2% 33% 43.5% 13.5%;
       grid-template-areas:
       "header header header header"
       "nav nav nav nav"
@@ -182,11 +195,21 @@ position: relative;
       "box2 box2 box2 box2"
       "box3 box3 box3 box3"
       ;}
-      .container .artikel{
+      .container .artikel {
         width: 40%;
       }
-      .slider{
+      .slider {
         display:none;
       }
+      #box4 {
+        display: none;
+      }
     }
+    @media screen and (max-width: 900px) {
+      header {
+      background-image: url('../imgs/Smallogga.png');
+
+    }
+  }
+
     /* #C08C8C #542304*/
