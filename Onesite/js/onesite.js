@@ -33,19 +33,19 @@ $(document).ready(function() {
 });
 /*jslint browser: true*/ /*global  $*/
 window.addEventListener('resize', function(event){
-  // do stuff here
 
   if ($(window).width()>1000){
 
     $(".slider500px").show();
+    $("#box4").show();
     $("#bilddub").show();
     $("#imgs").show();
-    $("#window").css("overflow", "hidden");
-
+    $("#window").css("overflow", "hidden")
   }
-  if ($(window).width()<1000){
+  if ($(window).width()<1135){
 
-  $(".slider500px").hide();
+    $(".slider500px").hide();
+    $("#box4").hide();
 
   }
 });
@@ -53,10 +53,17 @@ window.addEventListener('resize', function(event){
 if ($(window).width()>1000){
 
   $(".slider500px").show();
+  $("#box4").show();
   $("#bilddub").show();
   $("#imgs").show();
   $("#window").css("overflow", "hidden");
 
+}
+
+if ($(window).width()<1135){
+
+  $(".slider500px").hide();
+  $("#box4").hide();
 }
 
 var x = -1;
