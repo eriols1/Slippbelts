@@ -45,26 +45,26 @@ footer {
 }
 .prev {
   cursor: pointer;
-  margin: 20%;
-  color: white;
+  margin-left: 19%;
+  color: grey;
   font-weight: bold;
   font-size: 50px;
   user-select: none;
 }
 .next {
   cursor: pointer;
-  margin: 20%;
-  color: white;
+  color: grey;
   font-weight: bold;
   font-size: 50px;
   user-select: none;
+  margin-left: 1.5%;
 }
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
 .prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+  background-color: rgba(0,0,0,0.6);
 }
 .slider500px {
   grid-area: slider;
@@ -72,41 +72,41 @@ footer {
   display: flex;
   display: none;
   background-color: lightgrey;
+  background-position: center;
 }
 .punkt1 {
   height: 20px;
   width: 20px;
-  margin: 1%;
-  margin-left: 2%;
-  background-color: #bbb;
+  margin-left: 24.25%;
+  background-color: grey;
   border-radius: 50%;
   display: inline-block;
 }
 .punkt1:hover {
-  background-color: #717171;
+  background-color: rgba(0,0,0,0.6);
 }
 .punkt2 {
   height: 20px;
   width: 20px;
-  margin: 1%;
-  background-color: #bbb;
+  margin-left: 2%;
+  background-color: grey;
   border-radius: 50%;
   display: inline-block;
 }
 .punkt2:hover {
-  background-color: #717171;
+  background-color: rgba(0,0,0,0.6);
 }
 .punkt3 {
   height: 20px;
   width: 20px;
-  margin: 1%;
-  margin-right: 2%;
-  background-color: #bbb;
+  margin-left: 2%;
+  margin-right: 24.25%;
+  background-color: grey;
   border-radius: 50%;
   display: inline-block;
 }
 .punkt3:hover {
-  background-color: #717171;
+  background-color: rgba(0,0,0,0.6);
 }
 #box {
   grid-area: box;
@@ -140,7 +140,8 @@ footer {
   display: none;
 }
 #window{
-  margin: auto;
+  margin-left: auto;
+  margin-right: 17.25%;
   height: 600px;
   width: 800px;
 }
@@ -167,7 +168,7 @@ footer {
   height: 100%;
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;
-  grid-template-rows: 8% 2% 23% 17% 18% 18.5% 13.5%;
+  grid-template-rows: 8% 2% 24% 17% 18% 17.5% 13.5%;
   grid-template-areas:
   "header header header header"
   "nav nav nav nav"
@@ -177,10 +178,22 @@ footer {
   "box4 box4 box4 box4"
   "box3 box3 box3 box3"
   ;}
+  @media screen and (max-width: 1300px) {
+    .punkt3 {
+      margin-right: 22.5%;
+    }
+  }
   @media screen and (max-width: 1200px) {
     header {
-    background-image: url('../imgs/BigloggaMindre.png');
-  }
+      background-image: url('../imgs/BigloggaMindre.png');
+    }
+    .punkt1 {
+      margin-left: 21%;
+    }
+
+    .prev {
+      margin-left: 18%;
+    }
   }
   @media screen and (max-width: 1150px) {
     #wrapper {
@@ -207,9 +220,9 @@ footer {
     }
     @media screen and (max-width: 900px) {
       header {
-      background-image: url('../imgs/Smallogga.png');
+        background-image: url('../imgs/Smallogga.png');
 
+      }
     }
-  }
 
     /* #C08C8C #542304*/
