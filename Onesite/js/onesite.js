@@ -2,17 +2,17 @@ $(document).ready(function() {
   $( "nav" ).click(function() {
     $("nav").show();
     $( "#nav" ).toggle( "slow", function() {
-      // Animation complete.
+      // Öppnar/stänger menu
     });
   });
   $("#belts").click(function(){
     $('html, body').animate({
       scrollTop: $("#box").offset().top
     }, 1000);
-  });// När man klickar går den ner till id #box
+  });// När man klickar går den ner till animeras den ner till id #box
   $("#info").click(function(){
     $('html, body').animate({
-      scrollTop: $("#box1").offset().top
+      scrollTop: $("#box3").offset().top
     }, 1000);
   });
   $("#slippers").click(function(){
@@ -22,61 +22,63 @@ $(document).ready(function() {
   });
   $("#rea").click(function(){
     $('html, body').animate({
-      scrollTop: $("#box3").offset().top
-    }, 1000);
-  });
-  $("#info").click(function(){
-    $('html, body').animate({
       scrollTop: $("#box4").offset().top
     }, 1000);
   });
 });
-/*jslint browser: true*/ /*global  $*/
-window.addEventListener('resize', function(event){
+window.addEventListener('resize', function(event){//kör om funktionen varje gång du uppdaterar sidans bred
 
-  if ($(window).width()>1000){
-
+  if ($(window).width()>1000){//så länge fönstret är större än 1000 kommer id och klasserna synas
     $(".slider500px").show();
     $("#box4").show();
     $("#bilddub").show();
     $("#imgs").show();
     $("#window").css("overflow", "hidden")
   }
-  if ($(window).width()<1135){
-
+  if ($(window).width()>535) {
+    $("#box5").show();
+    $("#box6").show();
+  }
+  if ($(window).width()<1135){//när klasserna eller id är mindre än 1135 kommer de att gömmas
     $(".slider500px").hide();
     $("#box4").hide();
-
+  }
+  if ($(window).width()<535){//när klasserna eller id är mindre än 535 kommer de att gömmas
+    $("#box6").hide();
+    $("#box5").hide();
   }
 });
 
-if ($(window).width()>1000){
-
+if ($(window).width()>1000){//så länge fönstret är större än 1000 kommer id och klasserna synas
   $(".slider500px").show();
   $("#box4").show();
   $("#bilddub").show();
   $("#imgs").show();
   $("#window").css("overflow", "hidden");
-
 }
-
-if ($(window).width()<1135){
-
+if ($(window).width()<1135){//när klasserna eller id är mindre än 1135 kommer de att gömmas
   $(".slider500px").hide();
   $("#box4").hide();
+}
+if ($(window).width()<535){//när klasserna eller id är mindre än 535 kommer de att gömmas
+  $("#box6").hide();
+  $("#box5").hide();
+}
+if ($(window).width()>535) {//när klasserna eller id är större än 535 kommer de att visas
+  $("#box5").show();
+  $("#box6").show();
 }
 
 var x = -1;
 var i;
 
-$(".next").click(function(){
-  x=x+807;
+$(".next").click(function(){//till slider här ändras sig bilderna beroende på hur mycket x är värt och vilken knapp man trycker på
+  x=x+807;// en bild är 800px bred med ett lietet mellan rum så 807 pixlar behövs
 
   if (x>2400) {
     x = 0;
   }
-
-  $("#imgs").animate({left:-x},750);
+  $("#imgs").animate({left:-x},750);//animation går åt höger för att man tar minus vänster antimationen tar 750 millisekunder
 });
 
 $(".prev").click(function(){
@@ -85,7 +87,6 @@ $(".prev").click(function(){
   if (x<0) {
     x=1606;
   }
-
   $("#imgs").animate({left:-x},750);
 });
 
@@ -95,7 +96,6 @@ $("#imgs").click(function(){
   if (x>2400) {
     x = 0;
   }
-
   $("#imgs").animate({left:-x},750);
 });
 
@@ -103,7 +103,6 @@ $(".punkt1").click(function(){
   if (x>0) {
     x=x-x;
   }
-
   $("#imgs").animate({left:-x},750);
 });
 
@@ -114,7 +113,6 @@ $(".punkt2").click(function(){
   } else if (x>1200) {
     x=x-807;
   }
-
   $("#imgs").animate({left:-x},750);
 });
 
@@ -125,18 +123,5 @@ $(".punkt3").click(function(){
   } else if (x>800) {
     x=x+807;
   }
-
   $("#imgs").animate({left:-x},750);
 });
-
-// $(".scroll").click(function(){
-//   for(i=0;i<686;i+=1){
-//     x=x+2;
-//
-//     if (x>1370){
-//       x=0;
-//     }
-//
-//     $("#imgs").animate({left:-x},3);
-//   }
-// });
