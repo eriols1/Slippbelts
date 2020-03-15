@@ -28,26 +28,26 @@ nav {
 }
 .prev {
   cursor: pointer;
-  margin-left: 19%;
-  color: grey;
+  margin: 20%;
+  color: white;
   font-weight: bold;
   font-size: 50px;
   user-select: none;
 }
 .next {
   cursor: pointer;
-  color: grey;
+  margin: 20%;
+  color: white;
   font-weight: bold;
   font-size: 50px;
   user-select: none;
-  margin-left: 1.5%;
 }
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
 .prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.6);
+  background-color: rgba(0,0,0,0.8);
 }
 .slider500px {
   grid-area: slider;
@@ -55,41 +55,41 @@ nav {
   display: flex;
   display: none;
   background-color: lightgrey;
-  background-position: center;
 }
 .punkt1 {
   height: 20px;
   width: 20px;
-  margin-left: 24.25%;
-  background-color: grey;
+  margin: 1%;
+  margin-left: 2%;
+  background-color: #bbb;
   border-radius: 50%;
   display: inline-block;
 }
 .punkt1:hover {
-  background-color: rgba(0,0,0,0.6);
+  background-color: #717171;
 }
 .punkt2 {
   height: 20px;
   width: 20px;
-  margin-left: 2%;
-  background-color: grey;
+  margin: 1%;
+  background-color: #bbb;
   border-radius: 50%;
   display: inline-block;
 }
 .punkt2:hover {
-  background-color: rgba(0,0,0,0.6);
+  background-color: #717171;
 }
 .punkt3 {
   height: 20px;
   width: 20px;
-  margin-left: 2%;
-  margin-right: 24.25%;
-  background-color: grey;
+  margin: 1%;
+  margin-right: 2%;
+  background-color: #bbb;
   border-radius: 50%;
   display: inline-block;
 }
 .punkt3:hover {
-  background-color: rgba(0,0,0,0.6);
+  background-color: #717171;
 }
 .test
 {display:inline-block; overflow:hidden; background-repeat: no-repeat;
@@ -145,8 +145,7 @@ nav {
   display: none;
 }
 #window{
-  margin-left: auto;
-  margin-right: 17.25%;
+  margin: auto;
   height: 600px;
   width: 800px;
 }
@@ -187,11 +186,7 @@ nav {
   height: 100%;
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;
-
   grid-template-rows: 8% 2% 23% 9% 9% 9% 9% 17.5% 13.5%;
-
-  grid-template-rows: 8% 2% 24% 17% 18% 17.5% 13.5%;
-
   grid-template-areas:
   "header header header header"
   "nav nav nav nav"
@@ -203,24 +198,6 @@ nav {
   "box4 box4 box4 box4"
   "box3 box3 box3 box3"
   ;}
-
-  @media screen and (max-width: 1300px) {
-    .punkt3 {
-      margin-right: 22.5%;
-    }
-  }
-  @media screen and (max-width: 1200px) {
-    header {
-      background-image: url('../imgs/BigloggaMindre.png');
-    }
-    .punkt1 {
-      margin-left: 21%;
-    }
-
-    .prev {
-      margin-left: 18%;
-    }
-  }
 
   @media screen and (max-width: 1150px) {
     #wrapper {
@@ -321,13 +298,6 @@ nav {
                       ;}
                       .Biglogga {width: 100%; height: 150px;}
                     }
-    @media screen and (max-width: 900px) {
-      header {
-        background-image: url('../imgs/Smallogga.png');
-
-      }
-    }
-
 
                     @media screen and (max-width: 400px) {
                       #wrapper {
