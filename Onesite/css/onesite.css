@@ -5,7 +5,6 @@ header {
   grid-area: header;
   background-color: #000000;
   background-position: center;
-  background-image: url('../imgs/Biglogga.png');
 }
 nav {
   grid-area: nav;
@@ -14,22 +13,6 @@ nav {
   font-size: 35px;
   text-decoration: none;
   color: #8E88A4;
-}
-main {
-  grid-area: main;
-  display: flex;
-  flex-wrap: wrap;
-  background-color: lightgrey;
-}
-aside {
-  grid-area: aside;
-  background-color:#DB87FF;
-  font-family: cursive;
-  font-size: 30px;
-}
-footer {
-  grid-area: footer;
-  background-color: #000000;
 }
 .container {
   width: 100%;
@@ -108,6 +91,15 @@ footer {
 .punkt3:hover {
   background-color: #717171;
 }
+.test
+{display:inline-block; overflow:hidden; background-repeat: no-repeat;
+  background-image:url(../imgs/nedladdning.png);
+}
+.Biglogga {width: 100%; height: 250px; background-position: 0.250627% 0.258398%; background-size: 175%; }
+.BigloggaMindre {width: 100%; height: 250px; background-position: 0.235849% 32.8165%; background-size: 170.667%; }
+.Buttonfixed100px {width: 100px; height: 50px; background-position: 64.3737% 0.205339%; background-size: 2048.00%; }
+.Mindrelogga1 {width: 1000px; height: 250px; background-position: 95.8015% 65.3747%; background-size: 204.800%; }
+.Smallogga {width: 1000px; height: 250px; background-position: 0.190840% 65.3747%; background-size: 204.800%; }
 #box {
   grid-area: box;
   flex-wrap: wrap;
@@ -132,10 +124,23 @@ footer {
   display: flex;
   background-color: lightgrey;
 }
+#box5 {
+  grid-area: box5;
+  flex-wrap: wrap;
+  display: flex;
+  background-color: lightgrey;
+}
+#box6 {
+  grid-area: box6;
+  flex-wrap: wrap;
+  display: flex;
+  background-color: lightgrey;
+
+}
 #nav {
   background-color: #262733;
-  height: 200px;
-  width: 20%;
+  height: 170px;
+  width: 17%;
   position: absolute;
   display: none;
 }
@@ -163,53 +168,141 @@ footer {
   margin-right: 3%;
   margin-top: 1.5%;
 }
+#googlemaps {
+  height: 300px;
+  width: 100%;
+}
+#text {
+  margin-left: 5%;
+  margin-top: 0.5%;
+  font-size: 40px;
+}
+#text2 {
+  margin-left: 44%;
+  font-size: 40px;
+  font-style: italic;
+}
 #wrapper {
   height: 100%;
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;
-  grid-template-rows: 8% 2% 23% 17% 18% 18.5% 13.5%;
+  grid-template-rows: 8% 2% 23% 9% 9% 9% 9% 17.5% 13.5%;
   grid-template-areas:
   "header header header header"
   "nav nav nav nav"
   "slider slider slider slider"
   "box box box box"
+  "box6 box6 box6 box6"
   "box2 box2 box2 box2"
+  "box5 box5 box5 box5"
   "box4 box4 box4 box4"
   "box3 box3 box3 box3"
   ;}
-  @media screen and (max-width: 1200px) {
-    header {
-    background-image: url('../imgs/BigloggaMindre.png');
-  }
-  }
+
   @media screen and (max-width: 1150px) {
     #wrapper {
       height: 100%;
       display: grid;
       grid-template-columns: 25% 25% 25% 25%;
-      grid-template-rows: 8% 2% 33% 43.5% 13.5%;
+      grid-template-rows: 7.5% 2% 16.5% 16.5% 22% 22% 13.5%;
       grid-template-areas:
       "header header header header"
       "nav nav nav nav"
       "box box box box"
+      "box6 box6 box6 box6"
       "box2 box2 box2 box2"
+      "box5 box5 box5 box5"
       "box3 box3 box3 box3"
       ;}
       .container .artikel {
         width: 40%;
       }
       .slider {
-        display:none;
-      }
-      #box4 {
         display: none;
       }
+      .Biglogga {width: 100%; height: 225px;}
     }
-    @media screen and (max-width: 900px) {
-      header {
-      background-image: url('../imgs/Smallogga.png');
 
-    }
-  }
+    @media screen and (max-width: 1050px) {
+      #wrapper {
+        grid-template-rows: 6% 2% 16.5% 16.5% 22% 23.5% 13.5%;
+        ;}
+        .Biglogga {width: 100%; height: 225px;}
+      }
 
-    /* #C08C8C #542304*/
+      @media screen and (max-width: 900px) {
+        #wrapper {
+          grid-template-rows: 5.5% 2% 16.5% 16.5% 23% 23% 13.5%;
+          ;}
+          .Biglogga {width: 100%; height: 200px;}
+        }
+
+        @media screen and (max-width: 800px) {
+          #wrapper {
+            grid-template-rows: 5% 2% 17% 17% 22.5% 23% 13.5%;
+            ;}
+            .Biglogga {width: 100%; height: 175px;}
+          }
+
+          @media screen and (max-width: 700px) {
+            #wrapper {
+              grid-template-rows: 4.5% 2% 16.5% 16.5% 22% 23% 13.5%;
+              ;}
+            }
+
+            @media screen and (max-width: 600px) {
+              #wrapper {
+                grid-template-rows: 4% 2% 17% 17.5% 23% 23% 13.5%;
+                ;}
+              }
+
+              @media screen and (max-width: 550px) {
+                #wrapper {
+                  grid-template-rows: 4% 2% 33% 46% 15%;
+                  grid-template-areas:
+                  "header header header header"
+                  "nav nav nav nav"
+                  "box box box box"
+                  "box2 box2 box2 box2"
+                  "box3 box3 box3 box3"
+                  ;}
+                  .container .artikel {
+                    width: 60%;
+                    margin-left: 30%;
+                  }
+                  #box6 {
+                    display: none;
+                  }
+                  #box5 {
+                    display: none;
+                  }
+                  body {
+                    height: 400vh;
+                  }
+                }
+
+                @media screen and (max-width: 500px) {
+                  #wrapper {
+                    grid-template-rows: 4% 2% 33% 46% 15%;
+                    ;}
+                    .Biglogga {width: 100%; height: 150px;}
+                    .container .artikel {
+                      width: 60%;
+                      margin-left: 20%;
+                    }
+                  }
+
+                  @media screen and (max-width: 450px) {
+                    #wrapper {
+                      grid-template-rows: 3% 2% 34.5% 45.5% 15%;
+                      ;}
+                      .Biglogga {width: 100%; height: 150px;}
+                    }
+
+                    @media screen and (max-width: 400px) {
+                      #wrapper {
+                        grid-template-rows: 2.5% 2% 34% 46.5% 15%;
+                        ;}
+                        .Biglogga {width: 100%; height: 150px;}
+                      }
+                      /* #C08C8C #542304*/
