@@ -168,10 +168,9 @@ nav {
   margin-top: -10%;
 }
 #maps {
-  margin-left: 3%;
+  margin-left: 2%;
   margin-right: 5%;
-  margin-top: 2.5%;
-  display: flex;
+  margin-top: 1.5%;
 }
 #googlemaps {
   height: 300px;
@@ -188,11 +187,15 @@ nav {
   font-style: italic;
   margin-bottom: -20%;
 }
+#text3 {
+  color: white;
+  font-size: 20px;
+}
 #wrapper {
   height: 100%;
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;
-  grid-template-rows: 8% 2% 22% 9% 9% 11% 11% 16% 12%;
+  grid-template-rows: 8% 2% 22% 9% 9% 10% 10% 17% 13%;
   grid-template-areas:
   "header header header header"
   "nav nav nav nav"
@@ -221,8 +224,10 @@ nav {
       "box3 box3 box3 box3"
       ;}
       .container .artikel {
-        width: 40%;
-        font-size: 15px;
+        width: 26%;
+        margin-left: 12%;
+        margin-right: 12%;
+        font-size: 25px;
       }
       .slider {
         display: none;
@@ -232,40 +237,46 @@ nav {
 
     @media screen and (max-width: 1050px) {
       #wrapper {
-        grid-template-rows: 6% 2% 17% 17% 22.5% 23.5% 12%;
+        grid-template-rows: 6% 2% 17% 17% 22.5% 22.5% 13%;
         ;}
         .Biglogga {width: 100%; height: 225px;}
       }
 
       @media screen and (max-width: 900px) {
         #wrapper {
-          grid-template-rows: 5.5% 2% 17% 17% 23.5% 23% 12%;
+          grid-template-rows: 5.5% 2% 17% 17% 23.5% 22% 13%;
           ;}
           .Biglogga {width: 100%; height: 200px;}
         }
 
         @media screen and (max-width: 800px) {
           #wrapper {
-            grid-template-rows: 5% 2% 17% 17.5% 23% 23.5% 12%;
+            grid-template-rows: 5% 2% 17% 17.5% 23% 22.5% 13%;
             ;}
             .Biglogga {width: 100%; height: 175px;}
+            #googlemaps {
+              height: 250px
+            }
+            #text3 {
+              font-size: 20px;
+            }
           }
 
           @media screen and (max-width: 700px) {
             #wrapper {
-              grid-template-rows: 4.5% 2% 18% 18% 22.5% 23% 12%;
+              grid-template-rows: 4.5% 2% 18% 18% 22.5% 22% 13%;
               ;}
             }
 
             @media screen and (max-width: 600px) {
               #wrapper {
-                grid-template-rows: 4% 2% 17.5% 18% 23.5% 23% 12%;
+                grid-template-rows: 4% 2% 17.5% 18% 23.5% 22% 13%;
                 ;}
               }
 
               @media screen and (max-width: 550px) {
                 #wrapper {
-                  grid-template-rows: 4% 2% 34% 46% 14%;
+                  grid-template-rows: 4% 2% 37.5% 44.5% 12%;
                   grid-template-areas:
                   "header header header header"
                   "nav nav nav nav"
@@ -274,8 +285,10 @@ nav {
                   "box3 box3 box3 box3"
                   ;}
                   .container .artikel {
-                    width: 60%;
-                  margin-left: 10%;
+                  width: 50%;
+                  margin-left: 25%;
+                  margin-right: 25%;
+                  font-size: 20px;
                   }
                   #box6 {
                     display: none;
@@ -286,29 +299,38 @@ nav {
                   body {
                     height: 400vh;
                   }
+                  #googlemaps {
+                    height: 200px;
+                    width: 100%;
+                  }
                 }
 
                 @media screen and (max-width: 500px) {
-                  #wrapper {
-                    grid-template-rows: 4% 2% 34% 46% 14%;
-                    ;}
                     .Biglogga {width: 100%; height: 150px;}
-                    #googlemaps {
-                      height: 200px;
-                      width: 115%;
-                    }
                   }
 
                   @media screen and (max-width: 450px) {
                     #wrapper {
-                      grid-template-rows: 3% 2% 35% 46% 14%;
+                      grid-template-rows: 3% 2% 36% 47% 12%;
                       ;}
                       .Biglogga {width: 100%; height: 150px;}
                     }
 
                     @media screen and (max-width: 400px) {
                       #wrapper {
-                        grid-template-rows: 2.5% 2% 34% 46.5% 15%;
+                        grid-template-rows: 2.5% 2% 37.5% 47% 11%;
                         ;}
                         .Biglogga {width: 100%; height: 150px;}
+                        #googlemaps{
+                          margin-left: 5%;
+                        }
                       }
+                      @media screen and (max-width: 350px) {
+                        #wrapper {
+                          grid-template-rows: 2.5% 2% 37.5% 45.5% 12.5%;
+                          ;}
+                          .Biglogga {width: 100%; height: 150px;}
+                          #googlemaps{
+                            width: 90%;
+                          }
+                        }
