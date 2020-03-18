@@ -13,7 +13,6 @@ nav {
   font-size: 35px;
   text-decoration: none;
   color: #8E88A4;
-  cursor: pointer;
 }
 .container {
   width: 100%;
@@ -27,14 +26,8 @@ nav {
   margin-left: 5%;
   margin-right: 5%;
   justify-content: center;
-  font-size: 30px;
+  font-size: 20px;
 }
-.Cart {
-  margin-left: 20%;
-  margin-right: 25%;
-  cursor: pointer;
-}
-
 .prev {
   cursor: pointer;
   margin-left: 20%;
@@ -76,7 +69,6 @@ nav {
   background-color: #bbb;
   border-radius: 50%;
   display: inline-block;
-  cursor: pointer;
 }
 .punkt1:hover {
   background-color: #717171;
@@ -88,7 +80,6 @@ nav {
   background-color: #bbb;
   border-radius: 50%;
   display: inline-block;
-  cursor: pointer;
 }
 .punkt2:hover {
   background-color: #717171;
@@ -101,7 +92,6 @@ nav {
   background-color: #bbb;
   border-radius: 50%;
   display: inline-block;
-  cursor: pointer;
 }
 .punkt3:hover {
   background-color: #717171;
@@ -131,7 +121,7 @@ nav {
   grid-area: box3;
   flex-wrap: wrap;
   display: flex;
-  background-color: #262733;
+  background-color: #000000;
 }
 #box4 {
   grid-area: box4;
@@ -158,9 +148,9 @@ nav {
   width: 17%;
   position: absolute;
   display: none;
-  cursor: pointer;
 }
 #window{
+
   margin: auto;
   height: 600px;
   width: 800px;
@@ -171,19 +161,24 @@ nav {
   width: 3200px;
   position: relative;
   display: none;
-  cursor: pointer;
 }
 #bilddub{
   display: none;
 }
+.Cart {
+  margin-left: 20%;
+  margin-right: 25%;
+  margin-top: -10%;
+}
 #maps {
-  margin-top: 1%;
-  margin-left: 2%;
-  margin-right: 3%;
+  margin-left: 3%;
+  margin-right: 5%;
+  margin-top: 2.5%;
+  display: flex;
 }
 #googlemaps {
-  height: 275px;
-  width: 120%;
+  height: 300px;
+  width: 100%;
 }
 #text {
   margin-left: 5%;
@@ -194,17 +189,13 @@ nav {
   margin-left: 44%;
   font-size: 80px;
   font-style: italic;
-  margin-bottom: -10%;
-}
-#text3 {
-  font-size: 20px;
-  color: white;
+  margin-bottom: -20%;
 }
 #wrapper {
   height: 100%;
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;
-  grid-template-rows: 8% 2% 22% 9% 9% 10.5% 10.5% 17% 12%;
+  grid-template-rows: 8% 2% 22% 9% 9% 11% 11% 16% 12%;
   grid-template-areas:
   "header header header header"
   "nav nav nav nav"
@@ -219,9 +210,10 @@ nav {
 
   @media screen and (max-width: 1150px) {
     #wrapper {
+      height: 100%;
       display: grid;
       grid-template-columns: 25% 25% 25% 25%;
-      grid-template-rows: 7.5% 2% 17% 17% 22.5% 22% 12%;
+      grid-template-rows: 7.5% 2% 17% 17% 22.5% 22.5% 12%;
       grid-template-areas:
       "header header header header"
       "nav nav nav nav"
@@ -232,9 +224,8 @@ nav {
       "box3 box3 box3 box3"
       ;}
       .container .artikel {
-        width: 28%;
-        margin-right: 11%;
-        margin-left: 11%;
+        width: 40%;
+        font-size: 15px;
       }
       .slider {
         display: none;
@@ -244,7 +235,7 @@ nav {
 
     @media screen and (max-width: 1050px) {
       #wrapper {
-        grid-template-rows: 6% 2% 20% 20% 20% 20% 12%;
+        grid-template-rows: 6% 2% 17% 17% 22.5% 23.5% 12%;
         ;}
         .Biglogga {width: 100%; height: 225px;}
       }
@@ -267,9 +258,6 @@ nav {
             #wrapper {
               grid-template-rows: 4.5% 2% 18% 18% 22.5% 23% 12%;
               ;}
-              #googlemaps {
-                height: 250px;
-              }
             }
 
             @media screen and (max-width: 600px) {
@@ -280,7 +268,7 @@ nav {
 
               @media screen and (max-width: 550px) {
                 #wrapper {
-                  grid-template-rows: 4% 2% 35% 45% 14%;
+                  grid-template-rows: 4% 2% 34% 46% 14%;
                   grid-template-areas:
                   "header header header header"
                   "nav nav nav nav"
@@ -289,19 +277,14 @@ nav {
                   "box3 box3 box3 box3"
                   ;}
                   .container .artikel {
-                    margin-left: 35%;
-                    margin-right: 35%;
-                    font-size: 26px;
+                    width: 60%;
+                  margin-left: 10%;
                   }
                   #box6 {
                     display: none;
                   }
                   #box5 {
                     display: none;
-                  }
-                  #googlemaps {
-                    height: 200px;
-                    width: 100%;
                   }
                   body {
                     height: 400vh;
@@ -310,38 +293,26 @@ nav {
 
                 @media screen and (max-width: 500px) {
                   #wrapper {
-                    grid-template-rows: 4% 2% 38% 44% 12%;
+                    grid-template-rows: 4% 2% 34% 46% 14%;
                     ;}
                     .Biglogga {width: 100%; height: 150px;}
-                    #nav {
-                      width:40%;
+                    #googlemaps {
+                      height: 200px;
+                      width: 115%;
                     }
                   }
 
                   @media screen and (max-width: 450px) {
                     #wrapper {
-                      grid-template-rows: 3% 2% 39% 44% 12%;
+                      grid-template-rows: 3% 2% 35% 46% 14%;
                       ;}
                       .Biglogga {width: 100%; height: 150px;}
                     }
 
                     @media screen and (max-width: 400px) {
                       #wrapper {
-                        grid-template-rows: 2.5% 2% 37.5% 45.5% 13%;
+                        grid-template-rows: 2.5% 2% 34% 46.5% 15%;
                         ;}
                         .Biglogga {width: 100%; height: 150px;}
-                        .container .artikel {
-                          font-size: 20px;
-                        }
                       }
-                      @media screen and (max-width: 350px) {
-                        #wrapper {
-                          grid-template-rows: 2.5% 2% 37.5% 45.5% 13%;
-                          ;}
-                          .Biglogga {width: 100%; height: 150px;}
-                          #googlemaps {
-                            height: 200px;
-                            width: 107%;
-                          }
-                        }
                       /* #C08C8C #542304*/
