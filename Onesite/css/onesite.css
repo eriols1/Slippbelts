@@ -10,7 +10,6 @@ nav {
   grid-area: nav;
   background-color: #262733;
   display: flex;
-  font-family: 'Contrail One', cursive;
   font-size: 35px;
   text-decoration: none;
   color: #2DCCBF;
