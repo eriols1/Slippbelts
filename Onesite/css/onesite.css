@@ -15,6 +15,12 @@ nav {
   color: #2DCCBF;
   cursor: pointer;
 }
+footer {
+  grid-area: footer;
+  flex-wrap: wrap;
+  display: flex;
+  background-color: #000000;
+}
 .container {
   width: 100%;
   display: flex;
@@ -127,12 +133,6 @@ nav {
   display: flex;
   background-color: lightgrey;
 }
-#box3 {
-  grid-area: box3;
-  flex-wrap: wrap;
-  display: flex;
-  background-color: #000000;
-}
 #box4 {
   grid-area: box4;
   flex-wrap: wrap;
@@ -215,7 +215,7 @@ nav {
   "box2 box2 box2 box2"
   "box5 box5 box5 box5"
   "box4 box4 box4 box4"
-  "box3 box3 box3 box3"
+  "footer footer footer footer"
   ;}
 
   @media screen and (max-width: 1150px) {
@@ -231,7 +231,7 @@ nav {
       "box6 box6 box6 box6"
       "box2 box2 box2 box2"
       "box5 box5 box5 box5"
-      "box3 box3 box3 box3"
+      "footer footer footer footer"
       ;}
       .container .artikel {
         width: 26%;
@@ -278,76 +278,76 @@ nav {
         @media screen and (max-width: 700px) {
           #wrapper {
             grid-template-rows: 4% 2% 18% 18% 22.5% 22% 13.5%;
+          }
+          #nav {
+            width: 30%;
+          }
+        }
+
+        @media screen and (max-width: 600px) {
+          #wrapper {
+            grid-template-rows: 3.5% 2% 17.5% 18% 23.5% 22% 13.5%;
+          }
+        }
+
+        @media screen and (max-width: 550px) {
+          #wrapper {
+            grid-template-rows: 3.5% 2% 37.5% 44.5% 12.5%;
+            grid-template-areas:
+            "header header header header"
+            "nav nav nav nav"
+            "box box box box"
+            "box2 box2 box2 box2"
+            "footer footer footer footer"
+            ;}
+            .container .artikel {
+              width: 50%;
+              margin-left: 25%;
+              margin-right: 25%;
+              font-size: 20px;
             }
-            #nav {
-              width: 30%;
+            #box6 {
+              display: none;
+            }
+            #box5 {
+              display: none;
+            }
+            body {
+              height: 400vh;
+            }
+            #googlemaps {
+              height: 200px;
             }
           }
 
-          @media screen and (max-width: 600px) {
+          @media screen and (max-width: 500px) {
+            .Biglogga {width: 100%; height: 150px;}
+            #nav {
+              width: 39%;
+            }
+          }
+
+          @media screen and (max-width: 450px) {
             #wrapper {
-              grid-template-rows: 3.5% 2% 17.5% 18% 23.5% 22% 13.5%;
-              }
+              grid-template-rows: 3% 2% 36% 47% 12%;
             }
 
-            @media screen and (max-width: 550px) {
+            @media screen and (max-width: 400px) {
               #wrapper {
-                grid-template-rows: 3.5% 2% 37.5% 44.5% 12.5%;
-                grid-template-areas:
-                "header header header header"
-                "nav nav nav nav"
-                "box box box box"
-                "box2 box2 box2 box2"
-                "box3 box3 box3 box3"
-                ;}
-                .container .artikel {
-                  width: 50%;
-                  margin-left: 25%;
-                  margin-right: 25%;
-                  font-size: 20px;
-                }
-                #box6 {
-                  display: none;
-                }
-                #box5 {
-                  display: none;
-                }
-                body {
-                  height: 400vh;
-                }
-                #googlemaps {
-                  height: 200px;
-                }
+                grid-template-rows: 2.5% 2% 37.5% 46% 12%;
               }
-
-              @media screen and (max-width: 500px) {
-                .Biglogga {width: 100%; height: 150px;}
-                #nav {
-                  width: 39%;
-                }
+              #googlemaps{
+                margin-left: 5%;
               }
-
-              @media screen and (max-width: 450px) {
-                #wrapper {
-                  grid-template-rows: 3% 2% 36% 47% 12%;
-                }
-
-                @media screen and (max-width: 400px) {
-                  #wrapper {
-                    grid-template-rows: 2.5% 2% 37.5% 46% 12%;
-                  }
-                  #googlemaps{
-                    margin-left: 5%;
-                  }
-                  #nav {
-                    width: 94.5%;
-                  }
-                }
-                @media screen and (max-width: 350px) {
-                  #wrapper {
-                    grid-template-rows: 2.5% 2% 37.5% 45.5% 12.5%;
-                    }
-                    #googlemaps{
-                      width: 90%;
-                    }
-                  }
+              #nav {
+                width: 94.5%;
+              }
+            }
+            @media screen and (max-width: 350px) {
+              #wrapper {
+                grid-template-rows: 2.5% 2% 37.5% 45.5% 12.5%;
+              }
+              #googlemaps{
+                width: 90%;
+              }
+            }
