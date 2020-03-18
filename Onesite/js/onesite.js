@@ -17,7 +17,7 @@ $(document).ready(function () {
 // När man klickar går den ner till animeras den ner till id #box
     $("#info").click(function () {
         $("html, body").animate({
-            scrollTop: $("#box3").offset().top
+            scrollTop: $("footer").offset().top
         }, 1000);
     });
     $("#slippers").click(function () {
