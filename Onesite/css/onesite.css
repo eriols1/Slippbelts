@@ -257,6 +257,9 @@ nav {
         grid-template-rows: 5.5% 2% 17% 17% 23.5% 22% 13%;
         ;}
         .Biglogga {width: 100%; height: 200px;}
+        #nav {
+          width: 23%;
+        }
       }
 
       @media screen and (max-width: 800px) {
@@ -275,13 +278,16 @@ nav {
         @media screen and (max-width: 700px) {
           #wrapper {
             grid-template-rows: 4% 2% 18% 18% 22.5% 22% 13.5%;
-            ;}
+            }
+            #nav {
+              width: 30%;
+            }
           }
 
           @media screen and (max-width: 600px) {
             #wrapper {
               grid-template-rows: 3.5% 2% 17.5% 18% 23.5% 22% 13.5%;
-              ;}
+              }
             }
 
             @media screen and (max-width: 550px) {
@@ -316,6 +322,9 @@ nav {
 
               @media screen and (max-width: 500px) {
                 .Biglogga {width: 100%; height: 150px;}
+                #nav {
+                  width: 39%;
+                }
               }
 
               @media screen and (max-width: 450px) {
@@ -330,11 +339,14 @@ nav {
                   #googlemaps{
                     margin-left: 5%;
                   }
+                  #nav {
+                    width: 94.5%;
+                  }
                 }
                 @media screen and (max-width: 350px) {
                   #wrapper {
                     grid-template-rows: 2.5% 2% 37.5% 45.5% 12.5%;
-                    ;}
+                    }
                     #googlemaps{
                       width: 90%;
                     }
