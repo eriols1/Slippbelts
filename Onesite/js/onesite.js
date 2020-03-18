@@ -125,3 +125,12 @@ $(".punkt3").click(function(){
   }
   $("#imgs").animate({left:-x},750);
 });
+$(".reatoffla").click(function(){ // När man trycker på knappen kommer det upp att varan är slut
+  alert("We are unfourtunaly out of this product");
+});
+$(".prisbälte").click(function(){
+  alert("We are unfourtunaly out of this product");
+});
+$(".pristoffla").click(function(){
+  alert("We are unfourtunaly out of this product");
+});
