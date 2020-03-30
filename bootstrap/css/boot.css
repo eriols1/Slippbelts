@@ -1,1 +1,12 @@
-
+.row {
+  border: solid 2px;
+}
+.text {
+  font-size: 25px;
+}
+.text2 {
+  font-size: 15px;
+}
+.text3 {
+  font-size: 40px;
+}
