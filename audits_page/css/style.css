@@ -58,9 +58,8 @@ body{
 	margin-right: auto;
 }
 header{
-	width: 1000px;
 	height: 200px;
-	background-image: url('../img/logga1.jpg');
+	background-image: url('../img/logga2.jpg');
 	background-size: contain;
 }
 nav{
@@ -112,3 +111,15 @@ a:active {
 img{
 	padding: 20px;
 }
+/*
+Responsive CSS Sprite created using: https://responsive-css.us/
+*/
+
+.back, .logga1, .work, .work2
+{display:inline-block; overflow:hidden; background-repeat: no-repeat;
+background-image:url(sprite.png);}
+
+.back {width: 6000px; height: 4000px; background-position: 0.0912409% 0.0477099%; background-size: 136.533%; }
+.logga1 {width: 3255px; height: 1610px; background-position: 0.0405104% 60.8326%; background-size: 251.674%; }
+.work {width: 600px; height: 400px; background-position: 79.0832% 0.0256674%; background-size: 1365.33%; }
+.work2 {width: 603px; height: 400px; background-position: 87.0470% 0.0256674%; background-size: 1358.54%; }
