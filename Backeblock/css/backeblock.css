@@ -23,12 +23,11 @@ footer {
 #wrapper {
   height: 100%;
   display: grid;
-  grid-template-columns: 20% 15% 15% 15% 15% 20%;
+  grid-template-columns: 25% 25% 25% 25%;
   grid-template-rows: 25% 25% 25% 25%;
   grid-template-areas:
-  "header header header header header header"
-  "nav nav nav nav nav nav"
-  "main main main main main main"
-  "footer footer footer footer footer footer"
-  ;
+  "header header header header"
+  "nav nav nav nav"
+  "main main main main"
+  "footer footer footer footer";
 }
