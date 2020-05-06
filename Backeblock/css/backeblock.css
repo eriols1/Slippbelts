@@ -1,6 +1,7 @@
 header {
   grid-area: header;
   background-color: black;
+  background-image: url('../img/balte.png');
 }
 nav {
   grid-area: nav;
@@ -16,8 +17,6 @@ main {
 }
 footer {
   grid-area: footer;
-  flex-wrap: wrap;
-  display: flex;
   background-color: #000000;
 }
 #wrapper {
