@@ -3,7 +3,7 @@ body {
 }
 header {
   grid-area: header;
-  background-color: black;
+  background-color: green;
 }
 nav {
   grid-area: nav;
@@ -11,15 +11,15 @@ nav {
 }
 aside {
   grid-area: aside;
-  background-color: black;
+  background-color: red;
 }
 main {
   grid-area: main;
-  background-color: black;
+  background-color: yellow;
 }
 footer {
   grid-area: footer;
-  background-color: #000000;
+  background-color: #blue;
 }
 #wrapper {
   height: 100%;
