@@ -5,20 +5,24 @@ nav {
   background-color: RoyalBlue;
   position: fixed;
   top: 0;
-  width: 100%;
+  width: 96.5%;
   height: 14%;
   z-index: 10;
-}
-main {
-  margin-top: 2%;
-  grid-area: main;
+  font-size: 40px;
+  color: #8A8FAC;
+  cursor: default;
+  font-family: 'Roboto', sans-serif;
+  display: flex;
 }
 footer {
   grid-area: footer;
-  background-color: blue;
+  background-color: RoyalBlue;
+}
+footer img {
+  margin-left: 2%;
+  margin-top: 2%;
 }
 nav a {
-  margin-top: -10%;
   margin-left: 3%;
   color: #8A8FAC;
   text-decoration: none;
@@ -26,39 +30,41 @@ nav a {
   font-family: 'Roboto', sans-serif;
 }
 nav img {
-margin-left: 0.5%;
-margin-top: 0.3%
+  margin-top: 0.3%;
+  margin-right: 7%;
 }
-nav h1 {
-  margin-left: 40%;
-  margin-top: -6%;
-  font-size: 40px;
-  font-family: 'Roboto', sans-serif;
-  cursor: default;
+main {
+  margin-top: 2%;
+  grid-area: main;
+  position: center;
 }
-nav h2 {
-  color: #8A8FAC;
-  margin-left: 5%;
-  font-size: 25px;
-  cursor: default;
-}
-nav h3 {
-  margin-left: 10%;
-  margin-top: -4%;
+#text {
   font-size: 30px;
-  cursor: pointer;
+  color: #8A8FAC;
+  cursor: default;
+  font-family: 'Roboto', sans-serif;
+  margin-left: 5%;
+  margin-bottom: 1%;
+  margin-top: 3%;
+}
+#text2 {
+  margin-right: 20%;
+  margin-top: 1.5%;
+}
+#text3{
+  margin-top: 1.5%;
 }
 #dropdown {
   background-color: #172861;
   margin-top: -1%;
-  height: 140px;
+  height: 150px;
   width: 25%;
   position: absolute;
   display: none;
 }
 #slider {
   grid-area: slider;
-  background-color: lightblue;
+  background-color: #87CEEB;
 }
 #window {
   margin: auto;
@@ -114,12 +120,12 @@ nav h3 {
 .container {
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
 }
 .container .artikel {
   margin-top: 1.5%;
-  margin-left: 8.5%;
-  margin-right: 8.5%;
-  width: 33%;
+  margin-left: 9.5%;
+  width: 23.5%;
 }
 .btn {
   background-color: DodgerBlue;
@@ -142,4 +148,163 @@ nav h3 {
   "main main main main"
   "slider slider slider slider"
   "footer footer footer footer";
+}
+@media screen and (max-width: 1200px) {
+  #window {
+    width: 400px;
+  }
+  .container .artikel {
+    margin-left: 8.5%;
+  }
+}
+@media screen and (max-width: 1100px) {
+#dot1 {
+  margin-left: 42%;
+}
+nav {
+  height: 13%;
+}
+}
+@media screen and (max-width: 1000px) {
+  .container .artikel {
+    margin-left: 7.5%;
+  }
+  #dot1 {
+    margin-left: 41%;
+  }
+  main {
+    margin-top: 5%;
+  }
+}
+@media screen and (max-width: 900px) {
+  .container .artikel {
+    width: 27%;
+    margin-left: 5%;
+  }
+  #dot1 {
+    margin-left: 40%;
+  }
+@media screen and (max-width: 780px) {
+  body {
+    height: 250vh;
+  }
+  .container .artikel {
+    width: 100%;
+    margin-left: 35%;
+  }
+  #dot1 {
+    margin-left: 39%;
+  }
+  #wrapper {
+    margin-top: 14%;
+    grid-template-rows:  33% 53% 14%;
+    grid-template-areas:
+    "main main main main"
+    "slider slider slider slider"
+    "footer footer footer footer";
+  }
+}
+@media screen and (max-width: 700px) {
+  #dot1 {
+    margin-left: 38%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .container .artikel {
+    margin-left: 32%;
+  }
+  #dot1 {
+    margin-left: 36%;
+  }
+  #text2 {
+    margin-right: 4%;
+    margin-top: 4%;
+    font-size: 30px;
+  }
+  #text3{
+    margin-top: 4%;
+    font-size: 30px;
+  }
+  #dropdown {
+    margin-top: 20%;
+    height: 150px;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .container .artikel {
+    margin-left: 30%;
+  }
+  #dot1 {
+    margin-left: 33%;
+  }
+  main {
+    margin-top: 8%;
+  }
+}
+@media screen and (max-width: 450px) {
+  .container .artikel {
+    margin-left: 25%;
+  }
+    body {
+      height: 210vh;
+    }
+  main {
+    margin-top: 15%;
+  }
+  #wrapper {
+    grid-template-rows:  24% 61% 15%;
+    grid-template-areas:
+    "main main main main"
+    "slider slider slider slider"
+    "footer footer footer footer";
+  }
+  .responsive {
+  width: 200px;
+  height: 200px;
+  }
+  #window {
+    height: 200px;
+    width: 200px;
+  }
+  #dot1 {
+    margin-left: 32%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .container .artikel {
+    margin-left: 21%;
+  }
+  #dot1 {
+    margin-left: 28%;
+  }
+  body {
+    height: 200vh;
+  }
+  main {
+    margin-top: 14.5%;
+  }
+  #wrapper {
+    grid-template-rows:  24% 63.5% 12.5%;
+    grid-template-areas:
+    "main main main main"
+    "slider slider slider slider"
+    "footer footer footer footer";
+  }
+}
+@media screen and (max-width: 350px) {
+  .container .artikel {
+    margin-left: 16.5%;
+  }
+  body {
+    height: 225vh;
+  }
+ #text2 {
+   margin-top: 6%;
+   font-size: 25px;
+ }
+ #text3 {
+   margin-top: 6%;
+   font-size: 25px;
+ }
 }
