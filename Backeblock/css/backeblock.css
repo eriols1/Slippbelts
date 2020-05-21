@@ -262,9 +262,9 @@ nav {
     "slider slider slider slider"
     "footer footer footer footer";
   }
-  .responsive {
-  width: 200px;
-  height: 200px;
+  #imgs img {
+    width: 200px;
+    height: 200px;
   }
   #window {
     height: 200px;
