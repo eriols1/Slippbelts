@@ -12,18 +12,6 @@ $(document).ready(function() {
   $("#window").css("overflow", "hidden");
   var x = -1;
 
-  $("#imgs").click(function(){
-    x=x+404;
-
-    if (x>2000) {
-      x = 0;
-      $("#imgs").animate({left:-x},0);
-      x=x+404;
-    }
-
-    $("#imgs").animate({left:-x},500);
-  });
-
   $("#dot1").click(function(){
     if (x>0) {
       x=x-x;
