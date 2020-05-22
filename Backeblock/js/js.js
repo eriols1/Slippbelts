@@ -1,7 +1,4 @@
 /*jslint browser: true*/ /*global  $*/
-  document.addEventListener('touchstart', onTouchStart, {
-      passive: true
-  });
 $("nav").click(function () {
     $("nav").show();
     $("#dropdown").toggle("slow", function () {
