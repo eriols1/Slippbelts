@@ -441,10 +441,10 @@ body #wrapper3 {
     height: 200vh;
   }
   #wrapper3 main .btn {
-    margin-left: 17%;
+    margin-left: 23%;
   }
   #wrapper3 main img {
-    margin-left: 17%;
+    margin-left: 23%;
   }
 }
 @media screen and (max-width: 350px) {
@@ -507,10 +507,6 @@ body #wrapper3 {
   padding: 10px 0;
   height: 150px;
 }
-.modal-content, #caption {
-  animation-name: zoom;
-  animation-duration: 0.6s;
-}
 
 @keyframes zoom {
   from {transform:scale(0)}
@@ -533,6 +529,6 @@ body #wrapper3 {
 }
 @media only screen and (max-width: 700px){
   .modal-content {
-    width: 50%;
+    width: 56%;
   }
 }
