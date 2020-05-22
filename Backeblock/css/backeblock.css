@@ -24,7 +24,7 @@ footer img {
 }
 nav a {
   margin-left: 3%;
-  color: #8A8FAC;
+  color: white;
   text-decoration: none;
   font-size: 25px;
   font-family: 'Roboto', sans-serif;
@@ -33,15 +33,20 @@ nav img {
   margin-top: 0.3%;
   margin-right: 7%;
 }
-main {
+#noJsLinks {
+  margin-top: -1.5%;
+  margin-left: -5%;
+  width: 45%;
+}
+#slider {
+  grid-area: slider;
   margin-top: 2%;
-  grid-area: main;
   position: center;
 }
 #text {
   font-size: 30px;
-  color: #8A8FAC;
-  cursor: default;
+  color: white;
+  cursor: pointer;
   font-family: 'Roboto', sans-serif;
   margin-left: 5%;
   margin-bottom: 1%;
@@ -50,6 +55,9 @@ main {
 #text2 {
   margin-right: 20%;
   margin-top: 1.5%;
+  cursor: pointer;
+  font-family: 'Roboto', sans-serif;
+  display: none;
 }
 #text3{
   margin-top: 1.5%;
@@ -62,8 +70,8 @@ main {
   position: absolute;
   display: none;
 }
-#slider {
-  grid-area: slider;
+main {
+  grid-area: main;
   background-color: #87CEEB;
 }
 #window {
@@ -145,8 +153,8 @@ main {
   grid-template-columns: 25% 25% 25% 25%;
   grid-template-rows:  50% 30% 20%;
   grid-template-areas:
-  "main main main main"
   "slider slider slider slider"
+  "main main main main"
   "footer footer footer footer";
 }
 @media screen and (max-width: 1200px) {
@@ -157,16 +165,16 @@ main {
     margin-left: 8.5%;
   }
   #dropdown {
-      width: 33%;
+    width: 33%;
   }
 }
 @media screen and (max-width: 1100px) {
-#dot1 {
-  margin-left: 42%;
-}
-nav {
-  height: 13%;
-}
+  #dot1 {
+    margin-left: 42%;
+  }
+  nav {
+    height: 13%;
+  }
 }
 @media screen and (max-width: 1000px) {
   .container .artikel {
@@ -175,7 +183,7 @@ nav {
   #dot1 {
     margin-left: 41%;
   }
-  main {
+  slider {
     margin-top: 5%;
   }
   #dropdown {
@@ -190,132 +198,133 @@ nav {
   #dot1 {
     margin-left: 40%;
   }
-@media screen and (max-width: 780px) {
-  body {
-    height: 250vh;
-  }
-  #dropdown {
-    width: 45%;
-  }
-  .container .artikel {
-    width: 100%;
-    margin-left: 35%;
-  }
-  #dot1 {
-    margin-left: 39%;
-  }
-  #wrapper {
-    margin-top: 14%;
-    grid-template-rows:  33% 53% 14%;
-    grid-template-areas:
-    "main main main main"
-    "slider slider slider slider"
-    "footer footer footer footer";
-  }
 }
-@media screen and (max-width: 700px) {
-  #dot1 {
-    margin-left: 38%;
+  @media screen and (max-width: 780px) {
+    body {
+      height: 250vh;
+    }
+    #dropdown {
+      width: 45%;
+    }
+    .container .artikel {
+      width: 100%;
+      margin-left: 35%;
+    }
+    #dot1 {
+      margin-left: 39%;
+    }
+    #wrapper {
+      margin-top: 14%;
+      grid-template-rows:  33% 53% 14%;
+      grid-template-areas:
+      "slider slider slider slider"
+      "main main main main"
+      "footer footer footer footer";
+    }
   }
-  #dropdown {
-    width: 55%;
+  @media screen and (max-width: 700px) {
+    #dot1 {
+      margin-left: 38%;
+    }
+    #dropdown {
+      width: 55%;
+    }
   }
-}
-@media screen and (max-width: 600px) {
-  .container .artikel {
-    margin-left: 32%;
+  @media screen and (max-width: 600px) {
+    .container .artikel {
+      margin-left: 32%;
+    }
+    #dot1 {
+      margin-left: 36%;
+    }
+    #text2 {
+      margin-right: 4%;
+      margin-top: 4%;
+      font-size: 30px;
+    }
+    #text3{
+      margin-top: 4%;
+      font-size: 30px;
+    }
+    #dropdown {
+      height: 150px;
+      width: 100%;
+    }
   }
-  #dot1 {
-    margin-left: 36%;
+  @media screen and (max-width: 500px) {
+    .container .artikel {
+      margin-left: 30%;
+    }
+    #dot1 {
+      margin-left: 33%;
+    }
+    #slider {
+      margin-top: 8%;
+    }
   }
-  #text2 {
-    margin-right: 4%;
-    margin-top: 4%;
-    font-size: 30px;
-  }
-  #text3{
-    margin-top: 4%;
-    font-size: 30px;
-  }
-  #dropdown {
-    height: 150px;
-    width: 100%;
-  }
-}
-@media screen and (max-width: 500px) {
-  .container .artikel {
-    margin-left: 30%;
-  }
-  #dot1 {
-    margin-left: 33%;
-  }
-  main {
-    margin-top: 8%;
-  }
-}
-@media screen and (max-width: 450px) {
-  .container .artikel {
-    margin-left: 25%;
-  }
+  @media screen and (max-width: 450px) {
+    .container .artikel {
+      margin-left: 25%;
+    }
     body {
       height: 210vh;
     }
-  main {
-    margin-top: 15%;
+    slider {
+      margin-top: 15%;
+    }
+    #wrapper {
+      grid-template-rows:  24% 61% 15%;
+      grid-template-areas:
+      "slider slider slider slider"
+      "main main main main"
+      "footer footer footer footer";
+    }
+    #imgs img {
+      width: 200px;
+      height: 200px;
+    }
+    #window {
+      height: 200px;
+      width: 200px;
+    }
+    #dot1 {
+      margin-left: 32%;
+    }
   }
-  #wrapper {
-    grid-template-rows:  24% 61% 15%;
-    grid-template-areas:
-    "main main main main"
-    "slider slider slider slider"
-    "footer footer footer footer";
+  @media screen and (max-width: 400px) {
+    .container .artikel {
+      margin-left: 21%;
+    }
+    #dot1 {
+      margin-left: 28%;
+    }
+    body {
+      height: 200vh;
+    }
+    #slider {
+      margin-top: 14.5%;
+    }
+    #wrapper {
+      grid-template-rows:  24% 63.5% 12.5%;
+      grid-template-areas:
+      "slider slider slider slider"
+      "main main main main"
+      "footer footer footer footer";
+    }
   }
-  #imgs img {
-    width: 200px;
-    height: 200px;
+  @media screen and (max-width: 350px) {
+    .container .artikel {
+      margin-left: 16.5%;
+    }
+    body {
+      height: 225vh;
+    }
+    #text2 {
+      margin-top: 6%;
+      font-size: 25px;
+    }
+    #text3 {
+      margin-top: 6%;
+      font-size: 25px;
+    }
   }
-  #window {
-    height: 200px;
-    width: 200px;
-  }
-  #dot1 {
-    margin-left: 32%;
-  }
-}
-@media screen and (max-width: 400px) {
-  .container .artikel {
-    margin-left: 21%;
-  }
-  #dot1 {
-    margin-left: 28%;
-  }
-  body {
-    height: 200vh;
-  }
-  main {
-    margin-top: 14.5%;
-  }
-  #wrapper {
-    grid-template-rows:  24% 63.5% 12.5%;
-    grid-template-areas:
-    "main main main main"
-    "slider slider slider slider"
-    "footer footer footer footer";
-  }
-}
-@media screen and (max-width: 350px) {
-  .container .artikel {
-    margin-left: 16.5%;
-  }
-  body {
-    height: 225vh;
-  }
- #text2 {
-   margin-top: 6%;
-   font-size: 25px;
- }
- #text3 {
-   margin-top: 6%;
-   font-size: 25px;
- }
-}

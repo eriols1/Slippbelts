@@ -5,9 +5,11 @@ $("nav").click(function () {
 
   });
 });
+$("#text2").show();
 $("#dots").show();
 $("#window").show();
 $("#noJsImgs").hide();
+$("#noJsLinks").hide();
 $(document).ready(function() {
   $("#window").css("overflow", "hidden");
   var x = -1;
