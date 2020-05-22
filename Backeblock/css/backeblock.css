@@ -1,12 +1,18 @@
-body {
+body #wrapper{
   height: 165vh;
+}
+body #wrapper2{
+  height: 165vh;
+}
+body #wrapper3 {
+  height: 120vh;
 }
 nav {
   background-color: RoyalBlue;
   position: fixed;
   top: 0;
   width: 98.5%;
-  height: 14%;
+  height: 75px;
   z-index: 10;
   font-size: 40px;
   color: white;
@@ -21,9 +27,8 @@ nav a {
   font-size: 25px;
   font-family: 'Roboto', sans-serif;
 }
-nav img {
-  margin-top: 0.3%;
-  margin-right: 7%;
+nav a img {
+  margin-left: -50%;
 }
 main {
   grid-area: main;
@@ -35,8 +40,15 @@ aside {
 }
 aside h1 {
   color: black;
-  margin-top: 30%;
+  margin-top: 100px;
   margin-right: 20%;
+  font-family: 'Roboto', sans-serif;
+}
+#wrapper3 aside h1 {
+  color: black;
+  margin-top: 100px;
+  margin-right: 20%;
+  margin-left: -20%;
   font-family: 'Roboto', sans-serif;
 }
 footer {
@@ -47,10 +59,20 @@ footer img {
   margin-left: 2%;
   margin-top: 2%;
 }
+#wrapper3 main img {
+margin-left: 20%;
+margin-top: 60px;
+}
 #slider {
   grid-area: slider;
-  margin-top: 2%;
+  margin-top: 20px;
   position: center;
+}
+#myImg {
+  display: none;
+}
+#myImg2 {
+  display: none;
 }
 #window {
   margin: auto;
@@ -65,21 +87,23 @@ footer img {
 }
 #dropdown {
   background-color: #172861;
-  margin-top: -1%;
+  margin-top: -10px;
   height: 150px;
   width: 25%;
   position: absolute;
   display: none;
 }
 #noJsLinks {
-  margin-top: -1.5%;
-  margin-left: -5%;
+  margin-top: -16px;
+  margin-left: -40px;
   width: 45%;
 }
 #googlemaps {
   width: 80%;
   height: 80%;
-  margin: 10%;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 55px;
 }
 #text {
   font-size: 30px;
@@ -87,18 +111,18 @@ footer img {
   cursor: pointer;
   font-family: 'Roboto', sans-serif;
   margin-left: 5%;
-  margin-bottom: 1%;
-  margin-top: 3%;
+  margin-bottom: 5px;
+  margin-top: 8px;
 }
 #text2 {
   margin-right: 20%;
-  margin-top: 1.5%;
+  margin-top: 14px;
   cursor: pointer;
   font-family: 'Roboto', sans-serif;
   display: none;
 }
 #text3{
-  margin-top: 1.5%;
+  margin-top: 14px;
   font-family: 'Roboto', sans-serif;
 }
 #text4 {
@@ -108,7 +132,7 @@ footer img {
 }
 #dots {
   display: none;
-  margin-top: 2%;
+  margin-top: 10px;
 }
 #dot1 {
   height: 30px;
@@ -167,8 +191,17 @@ footer img {
 .btn:hover {
   background-color: RoyalBlue;
 }
+#wrapper3 main .btn {
+  background-color: DodgerBlue;
+  border: none;
+  color: white;
+  padding: 12px 44px;
+  cursor: pointer;
+  font-size: 20px;
+  margin-left: 30%;
+}
 #wrapper {
-  margin-top: 7%;
+  margin-top: 70px;
   height: 100%;
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;
@@ -179,7 +212,7 @@ footer img {
   "footer footer footer footer";
 }
 #wrapper2 {
-  margin-top: 5%;
+  margin-top: 70px;
   height: 100%;
   display: grid;
   grid-template-columns: 25% 25% 15% 35%;
@@ -188,6 +221,18 @@ footer img {
   "main main main aside"
   "main main main aside"
   "footer footer footer footer";
+}
+#wrapper3 {
+  margin-top: 70px;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows:  50% 30% 20%;
+  grid-template-areas:
+  "main main main aside"
+  "main main main aside"
+  "footer footer footer footer";
+}
 }
 @media screen and (max-width: 1200px) {
   #window {
@@ -204,9 +249,6 @@ footer img {
   #dot1 {
     margin-left: 42%;
   }
-  nav {
-    height: 13%;
-  }
 }
 @media screen and (max-width: 1000px) {
   .container .artikel {
@@ -215,11 +257,14 @@ footer img {
   #dot1 {
     margin-left: 41%;
   }
-  #slider {
-    margin-top: 5%;
-  }
   #dropdown {
     width: 40%;
+  }
+  nav a img {
+    margin-left: -40%;
+  }
+  #wrapper3 main .btn{
+    margin-left: 35%;
   }
 }
 @media screen and (max-width: 900px) {
@@ -231,7 +276,6 @@ footer img {
     margin-left: 40%;
   }
   #wrapper2 {
-    margin-top: 2%;
     grid-template-columns: 25% 25% 25% 25%;
     grid-template-areas:
     "main main main main"
@@ -241,12 +285,18 @@ footer img {
   aside h1 {
     margin-right: 10%;
     margin-left: 10%;
-    margin-top: 0%;
+    margin-top: 0px;
   }
 }
 @media screen and (max-width: 780px) {
+  nav a img {
+    margin-left: -30%;
+  }
   body #wrapper {
     height: 250vh;
+  }
+  body #wrapper3 {
+    height: 160vh;
   }
   #dropdown {
     width: 45%;
@@ -255,24 +305,41 @@ footer img {
     margin-left: 39%;
   }
   #wrapper {
-    margin-top: 14%;
     grid-template-rows: 33% 53% 14%;
-  }
-  #wrapper2 {
-    margin-top: 10%;
   }
   .container .artikel {
     width: 100%;
     margin-left: 35%;
   }
+  #wrapper3 {
+    grid-template-rows: 55% 25% 20%;
+    grid-template-areas:
+    "main main main main"
+    "aside aside aside aside"
+    "footer footer footer footer";
+  }
+  #wrapper3 aside h1 {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 30px;
+  }
 }
 @media screen and (max-width: 700px) {
+  #wrapper3 main img {
+    margin-left: 35%;
+  }
   #dot1 {
     margin-left: 38%;
   }
   #dropdown {
     width: 55%;
   }
+body #wrapper3 {
+  height: 100vh;
+}
+#wrapper3 {
+  grid-template-rows: 54% 26% 20%;
+}
 }
 @media screen and (max-width: 600px) {
   .container .artikel {
@@ -283,11 +350,11 @@ footer img {
   }
   #text2 {
     margin-right: 4%;
-    margin-top: 4%;
+    margin-top: 20px;
     font-size: 30px;
   }
   #text3{
-    margin-top: 4%;
+    margin-top: 20px;
     font-size: 30px;
   }
   #dropdown {
@@ -295,15 +362,21 @@ footer img {
     width: 100%;
   }
 }
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 565px) {
   #googlemaps {
-    height: 80%;
+    height: 70%;
   }
   body #wrapper2 {
     height: 175vh;
   }
   #wrapper2 {
-    grid-template-rows: 50% 30% 19%;
+    grid-template-rows: 44% 36% 19%;
+  }
+  #wrapper3 main .btn {
+    margin-left: 30%;
+  }
+  #wrapper3 main img {
+    margin-left: 30%;
   }
 }
 @media screen and (max-width: 500px) {
@@ -313,15 +386,14 @@ footer img {
   #dot1 {
     margin-left: 33%;
   }
-  #slider {
-    margin-top: 8%;
-  }
   #wrapper2 {
-    margin-top: 13%;
     grid-template-rows: 45% 35% 19%;
   }
   aside h1 {
     font-size: 20px;
+  }
+  nav a img {
+    margin-left: -20%;
   }
 }
 @media screen and (max-width: 450px) {
@@ -330,9 +402,6 @@ footer img {
   }
   body #wrapper{
     height: 210vh;
-  }
-  slider {
-    margin-top: 15%;
   }
   #wrapper {
     grid-template-rows:  24% 61% 15%;
@@ -348,6 +417,12 @@ footer img {
   #dot1 {
     margin-left: 32%;
   }
+  #wrapper3 main .btn {
+    margin-left: 25%;
+  }
+  #wrapper3 main img {
+    margin-left: 25%;
+  }
 }
 @media screen and (max-width: 400px) {
   .container .artikel {
@@ -356,18 +431,20 @@ footer img {
   #dot1 {
     margin-left: 28%;
   }
-  #slider {
-    margin-top: 14.5%;
-  }
   #wrapper {
     grid-template-rows:  24% 63.5% 12.5%;
-}
+  }
   #wrapper2 {
-    margin-top: 20%;
     grid-template-rows: 40% 40% 19%;
   }
   body #wrapper {
     height: 200vh;
+  }
+  #wrapper3 main .btn {
+    margin-left: 17%;
+  }
+  #wrapper3 main img {
+    margin-left: 17%;
   }
 }
 @media screen and (max-width: 350px) {
@@ -378,11 +455,84 @@ footer img {
     height: 225vh;
   }
   #text2 {
-    margin-top: 6%;
     font-size: 25px;
   }
   #text3 {
-    margin-top: 6%;
     font-size: 25px;
+  }
+}
+
+#myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+#myImg2 {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg2:hover {opacity: 0.7;}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 11;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.9);
+}
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+.modal-content, #caption {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {transform:scale(0)}
+  to {transform:scale(1)}
+}
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 80%;
   }
 }
