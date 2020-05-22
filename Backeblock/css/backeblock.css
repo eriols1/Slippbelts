@@ -494,7 +494,7 @@ body #wrapper3 {
 .modal-content {
   margin: auto;
   display: block;
-  width: 80%;
+  width: 50%;
   max-width: 700px;
 }
 #caption {
@@ -533,6 +533,6 @@ body #wrapper3 {
 }
 @media only screen and (max-width: 700px){
   .modal-content {
-    width: 80%;
+    width: 50%;
   }
 }
