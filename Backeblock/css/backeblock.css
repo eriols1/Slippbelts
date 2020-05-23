@@ -11,8 +11,8 @@ nav {
   background-color: RoyalBlue;
   position: fixed;
   top: 0;
-  width: 98.5%;
-  height: 75px;
+  width: 100%;
+  height: 85px;
   z-index: 10;
   font-size: 40px;
   color: white;
@@ -28,7 +28,8 @@ nav a {
   font-family: 'Roboto', sans-serif;
 }
 nav a img {
-  margin-left: -50%;
+  margin-top: 5px;
+  margin-left: -45%;
 }
 main {
   grid-area: main;
@@ -211,7 +212,7 @@ margin-top: 60px;
   height: 100%;
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;
-  grid-template-rows:  50% 30% 20%;
+  grid-template-rows: auto;
   grid-template-areas:
   "slider slider slider slider"
   "main main main main"
@@ -222,7 +223,7 @@ margin-top: 60px;
   height: 100%;
   display: grid;
   grid-template-columns: 25% 25% 15% 35%;
-  grid-template-rows:  50% 30% 20%;
+  grid-template-rows: auto;
   grid-template-areas:
   "main main main aside"
   "main main main aside"
@@ -233,7 +234,7 @@ margin-top: 60px;
   height: 100%;
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;
-  grid-template-rows:  50% 30% 20%;
+  grid-template-rows: auto;
   grid-template-areas:
   "main main main aside"
   "main main main aside"
@@ -330,6 +331,9 @@ margin-top: 60px;
   }
 }
 @media screen and (max-width: 700px) {
+  .modal-content {
+    width: 58%;
+  }
   #wrapper3 main img {
     margin-left: 35%;
   }
@@ -530,9 +534,4 @@ body #wrapper3 {
   color: #bbb;
   text-decoration: none;
   cursor: pointer;
-}
-@media only screen and (max-width: 700px){
-  .modal-content {
-    width: 58%;
-  }
 }

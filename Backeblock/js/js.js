@@ -110,5 +110,4 @@ $(document).ready(function () {
     $("span").click(function () {
         modal.style.display = "none";
     });
-
 });
