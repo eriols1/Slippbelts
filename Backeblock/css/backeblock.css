@@ -32,20 +32,20 @@ nav a img {
 }
 main {
   grid-area: main;
-  background-color: #87CEEB;
+  background-color: #000080;
 }
 aside {
   grid-area: aside;
-  background-color: #87CEEB;
+  background-color: #000080;
 }
 aside h1 {
-  color: black;
+  color: white;
   margin-top: 100px;
   margin-right: 20%;
   font-family: 'Roboto', sans-serif;
 }
 #wrapper3 aside h1 {
-  color: black;
+  color: white;
   margin-top: 100px;
   margin-right: 20%;
   margin-left: -20%;
@@ -127,7 +127,7 @@ margin-top: 60px;
 }
 #text4 {
   font-size: 30px;
-  color: black;
+  color: white;
   font-family: 'Roboto', sans-serif;
 }
 #dots {
