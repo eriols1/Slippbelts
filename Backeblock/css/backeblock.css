@@ -295,6 +295,9 @@ margin-top: 60px;
   }
 }
 @media screen and (max-width: 780px) {
+  nav a {
+    font-size: 20px;
+  }
   nav a img {
     margin-left: -30%;
   }
@@ -304,6 +307,7 @@ margin-top: 60px;
   body #wrapper3 {
     height: 160vh;
   }
+
   #dropdown {
     width: 45%;
   }
